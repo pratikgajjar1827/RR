@@ -1,0 +1,87 @@
+import React from 'react'; 
+import { Link } from 'react-router-dom';
+import SoiutionBgImage from '../../assets/images/bg/solution-bg-image.jpg'; 
+import SoiutionImage1 from '../../assets/images/solution/solution-image1.jpg'; 
+import SoiutionImage2 from '../../assets/images/solution/solution-image2.jpg'; 
+import SoiutionImage3 from '../../assets/images/solution/solution-image3.jpg'; 
+
+function SoiutionSection() {
+    return (
+        <section className="solution-area pt-130 pb-130" style={{ backgroundImage: `url(${SoiutionBgImage})` }}>
+            <div className="container">
+                <div className="solution__wrp">
+                    <div className="solution__header">
+                        <div className="section-header__flex mb-50">
+                            <div>
+                                <h6 className="">Optimize Security Solutions</h6>
+                                <h2 className="wow splt-txt text-white" data-splitting>Comprehensive Protection <br />
+                                    for your Business</h2>
+                            </div>
+                            <div>
+                                <p className=" wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    Metrics for improving your site's performance over
+                                    time security measures like systems</p>
+                                <ul>
+                                    <li className="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms"><i
+                                            className="fa-regular fa-check"></i> Professional Team Member</li>
+                                    <li className="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms"><i
+                                            className="fa-regular fa-check"></i> Awards Winning IT Solutions Company</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row g-4">
+                        <div className="col-md-6 col-xl-4 wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div className="solution__item">
+                                <div className="image">
+                                    <img src={SoiutionImage1} alt="image"/>
+                                </div>
+                                <div className="content">
+                                    <h5 className="sub-title">Start up Business</h5>
+                                    <div className="title">
+                                        <span className="number">1</span>
+                                        <h4 className="text-white"><Link to="/page-service-details">Defense Arsenal Unveiling Our
+                                                Cyber Security Suite</Link></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-xl-4 wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+                            <div className="solution__item">
+                                <div className="image">
+                                    <img src={SoiutionImage2} alt="image"/>
+                                </div>
+                                <div className="content">
+                                    <h5 className="sub-title">Small Business</h5>
+                                    <div className="title">
+                                        <span className="number">2</span>
+                                        <h4 className="text-white"><Link to="/page-service-details">Fortified Protection Explore
+                                                Our
+                                                Robust Security Features</Link></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-xl-4 wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
+                            <div className="solution__item">
+                                <div className="image">
+                                    <img src={SoiutionImage3} alt="image"/>
+                                </div>
+                                <div className="content">
+                                    <h5 className="sub-title">Entrepreneur</h5>
+                                    <div className="title">
+                                        <span className="number">3</span>
+                                        <h4 className="text-white"><Link to="/page-service-details">Empowering Digital Safety at
+                                                Every Level Protection</Link></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+}
+
+export default SoiutionSection;

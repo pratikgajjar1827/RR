@@ -1,0 +1,59 @@
+// Breadcrumb area start here ***
+.breadcrumb {
+	&-area {
+		overflow: hidden;
+		@include bg-image;
+		padding: 130px 0;
+		position: relative;
+		z-index: 1;
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #081f23b2;
+			content: "";
+			z-index: -1;
+		}
+		@include breakpoint(max-md) {
+			padding: 60px 0;
+		}
+	}
+	&__item {
+		text-align: center;
+		.title {
+			margin-bottom: 20px;
+			color: var(--white);
+		}
+		ul {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+			li {
+				position: relative;
+				color: var(--white);
+				margin-right: 10px;
+				a {
+					font-weight: 500;
+					letter-spacing: 1px;
+					&:hover {
+						letter-spacing: 2px;
+					}
+					&:before{
+						position: absolute;
+						content: "\f105";
+						top: 2px;
+						left: 54px;
+						font-family: "Font Awesome 6 Pro";
+						font-size: 14px;
+						font-weight: 300;
+
+					}
+				}
+			}
+		}
+	}
+}
+// Breadcrumb area end here ***
