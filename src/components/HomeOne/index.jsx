@@ -5,7 +5,6 @@ import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 import Banner from './Banner.jsx';
 import Feature from './Feature.jsx';
-import Consult from './consult.jsx';
 import Accordion from './Accordion.jsx';
 import Professional from './Professional.jsx';
 import ChooseUs from './ChooseUs.jsx';
